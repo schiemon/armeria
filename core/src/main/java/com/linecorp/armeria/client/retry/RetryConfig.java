@@ -214,7 +214,7 @@ public final class RetryConfig<T extends Response> {
     }
 
     /**
-     * Returns the {@link RetryRuleWithContent} converted from the {@link RetryRule} of this config.
+     * Returns the {@link RetryRule} converted from the {@link RetryRuleWithContent} of this config.
      */
     RetryRule fromRetryRuleWithContent() {
         requireNonNull(retryRuleWithContent, "retryRuleWithContent");
@@ -223,7 +223,7 @@ public final class RetryConfig<T extends Response> {
     }
 
     /**
-     * Returns the {@link RetryRule} converted from the {@link RetryRuleWithContent} of this config.
+     * Returns the {@link RetryRuleWithContent} converted from the {@link RetryRule} of this config.
      */
     RetryRuleWithContent<T> fromRetryRule() {
         requireNonNull(retryRule, "retryRule");
